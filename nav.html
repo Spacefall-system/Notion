@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #6abdde;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="spacefall-system" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-moon"></i> Spacefall system.</a>
+		<a id="system-dash" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-moon"></i> System dash.</a>
+		<a id="journal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Journal. </a>
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'spacefall-system')
+				window.open("https://www.notion.so/spacefallsystem/spacefall-system-bc8a1a7ee30c4d62b887e4480df527e1", '_blank').focus();
+			else if (id == 'system-dash')
+				window.open("https://www.notion.so/spacefallsystem/System-dash-f119c096fe014a25bf82eea5b15b2200", '_blank').focus();
+			else if (id == 'journal')
+				window.open("https://www.notion.so/spacefallsystem/Journal-36fb44b9c0dc42b5bbb1b7897bed7987?pvs=25", '_blank').focus();
+
+
+		}
+	</script>
+
+
+</body>
+
+</html>
